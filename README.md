@@ -56,11 +56,3 @@ public static Properties loadPropertiesFile() throws Exception {
 	return prop;
 }
 ```    
-
-**Sample Output**
-
-> List of all skills 
-> 1) All Rounder 
-> 2) Batting 
-> 3) Bowling 
-> 4) Wicket Keeping Batting 
