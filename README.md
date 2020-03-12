@@ -56,3 +56,12 @@ public static Properties loadPropertiesFile() throws Exception {
 	return prop;
 }
 ```    
+**Sample Output**
+```
+List of all team and their captain 
+Team Name 	Captain 
+England 	Joe Root 
+Australia 	Tim Paine
+South Africa	Faf du Plessis 
+India 		Virat Kohli
+```
