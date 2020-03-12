@@ -5,9 +5,9 @@
 
 ## Progression 1:
 
-Create `Main.java` with main method
+Create a class called as `Main` with main method
 
-Create `TeamCaptain.java` domain class with below attributes, 
+Create a class called as `TeamCaptain` with below attributes, 
 ```
 captainld - Long 
 captainName - String 
@@ -19,13 +19,13 @@ Include constructor with below arguments,
 
 ## Progression 2:
 
-Create `TeamCaptainDAO.java` class with thee below method, 
+Create a dao-class called as `TeamCaptainDAO` with thee below method, 
 `public TeamCaptain getTeamCaptainBylD(Long id)` - Method used to fetch the Captain information from the database based on the player id. 
 
 
 ## Progression 3:
 
-Create `Team.java` domain class with below attributes, 
+Create a class called as `Team` with below attributes, 
 ```
 teamld - Long 
 name - String 
@@ -37,7 +37,7 @@ Include getter and setter method for all the attributes Include constructor with
 
 ## Progression 4:
 
-Create `TeamDAO.java` class with below methods, 
+Create a dao-class called as `TeamDAO` with below methods, 
 `public List<Team> getAllTeams()` - Method used to fetch all the teams and their corresponding Captains from the database. 
 
 
