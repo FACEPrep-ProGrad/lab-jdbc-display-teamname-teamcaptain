@@ -39,6 +39,11 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 ## Requirements
 If you haven't downloaded OJDBC driver (ojdbc6.jar), then download using this link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
 
+## Schema Diagram
+
+![1 2](https://user-images.githubusercontent.com/61002120/76416050-5807d380-63c0-11ea-8d52-9e8750e800f9.png)
+
+
 ## Progression 0:
 
 1. Right click on src folder and select new - file and name it as jdbc.properties.
@@ -53,41 +58,40 @@ If you haven't downloaded OJDBC driver (ojdbc6.jar), then download using this li
 
 ## Progression 2:
 
-1. **Create a model class called as `TeamCaptain` with below attributes,** 
+1. Create a model class called as `TeamCaptain` with below attributes,
 	- captainld - Long 
 	- captainName - String 
 
-2. **Include getter and setter method for all the attributes**
-3. **Include constructor with below arguments,** 
+2. Include getter and setter methods for all the attributes
+3. Include constructor with below arguments, 
 	- public TeamCaptain(captainld, captainName)
 
 ## Progression 3:
 
-1. **Create a dao-class called as `TeamCaptainDAO` with thee below method,** 
+1. Create a dao-class called as `TeamCaptainDAO` with thee below method,
 	- `public TeamCaptain getTeamCaptainBylD(Long id)` - Method used to fetch the Captain information from the database based on the player id. 
 
 
 ## Progression 3:
 
-1. **Create a class called as `Team` with below attributes,** 
+1. Create a class called as `Team` with below attributes,
 	- teamld - Long 
 	- name - String 
 	- teamCaptain - TeamCaptain 
 
-2. **Include getter and setter method for all the attributes.**
-3. **Include constructor with below arguments,** 
+2. Include getter and setter methods for all the attributes.
+3. Include constructor with below arguments, 
 	- `public Team(Long teamld, String name, TeamCaptain teamCaptain )`
 
 ## Progression 4:
 
-1. **Create a dao-class called as `TeamDAO` with below methods,** 
+1. Create a dao-class called as `TeamDAO` with below methods, 
 	- `public List<Team> getAllTeams()` - Method used to fetch all the teams and their corresponding Captains from the database. 
 
 ## Progression 5:
-1. **Create a controller class called as Main.**
-2. **Create appropriate objects and call the corresponding method to display the details as per the sample output format.**
+1. Create a controller class called as Main.
+2. Create appropriate objects and call the corresponding method to display the details as per the sample output format.
 
-![1 2](https://user-images.githubusercontent.com/61002120/76416050-5807d380-63c0-11ea-8d52-9e8750e800f9.png)
 
 ## Points to remember:
 _DAO Layer - Data access layer provides the gateway to create, reterive, update or delete any data in the database. All database related operations will be performed in this layer._
@@ -124,3 +128,5 @@ Australia 	Tim Paine
 South Africa	Faf du Plessis 
 India 		Virat Kohli
 ```
+
+Happy Coding ProGrad ❤️!
