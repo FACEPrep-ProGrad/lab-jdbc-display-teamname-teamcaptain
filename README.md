@@ -84,15 +84,18 @@ If you haven't downloaded OJDBC driver (ojdbc6.jar), then download using this li
 	- `public List<Team> getAllTeams()` - Method used to fetch all the teams and their corresponding Captains from the database. 
 
 ## Progression 5:
-1. **Create a controller called as Main.**
+1. **Create a controller class called as Main.**
 2. **Create appropriate objects and call the corresponding method to display the details as per the sample output format.**
 
 ![1 2](https://user-images.githubusercontent.com/61002120/76416050-5807d380-63c0-11ea-8d52-9e8750e800f9.png)
 
+## Points to remember:
+_DAO Layer - Data access layer provides the gateway to create, reterive, update or delete any data in the database. All database related operations will be performed in this layer._
+
 
 ### Note:
 
-Use the below code to retreive the connection details from mysql.properties to establish connection
+Use the below code to retreive the connection details from jdbc.properties to establish connection
 ```
 public static Properties loadPropertiesFile() throws Exception {
 	Properties prop = new Properties();	
@@ -101,6 +104,16 @@ public static Properties loadPropertiesFile() throws Exception {
 	in.close(); 
 	return prop;
 }
+```
+Create a file called as jdbc.properites. To create a file right click on the application - new - file - name the file as jdbc.properties.
+```
+jdbc.properties
+#JDBC properties entry for ORACLE server
+driver = oracle.jdbc.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:xe
+username=your_username
+password=your_password
+
 ```    
 **Sample Output**
 ```
